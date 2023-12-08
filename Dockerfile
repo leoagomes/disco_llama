@@ -14,4 +14,4 @@ WORKDIR /app
 RUN bundle exec rake install
 
 # Run disco_llama
-CMD ["disco_llama"]
+CMD ["disco-llama"]
