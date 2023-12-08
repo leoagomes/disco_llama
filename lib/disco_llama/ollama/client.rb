@@ -47,6 +47,15 @@ module DiscoLlama
         final_response
       end
 
+      def embeddings(model:, prompt:, options: {})
+        response =
+          self.class.post(
+            "/embeddings",
+            body: { model:, prompt:, options: }.to_json
+          )
+        response.parsed_response["embeddings"]
+      end
+
       private
 
       def hash_to_response!(raw)
