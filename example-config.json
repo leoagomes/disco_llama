@@ -1,1 +1,8 @@
-{}
+{
+  "discord": {
+    "token": ""
+  },
+  "ollama": {
+    "base_uri": "http://localhost:11434/api"
+  }
+}
