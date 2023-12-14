@@ -2,7 +2,9 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
+require "dotenv/load"
+require "irb"
+
 require "disco_llama"
 
-require "irb"
 IRB.start(__FILE__)

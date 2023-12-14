@@ -33,6 +33,9 @@ module DiscoLlama
       # in the next request to keep a conversational memory
       attribute? :context, Types::Array.of(Types::Integer).optional
 
+      # internal, does not come from the API, the response so far
+      attribute? :partial_response, Types::String.optional
+
       Schema = Dry::Schema.JSON do
         required(:model).filled(:string)
         required(:created_at).filled(:date_time)

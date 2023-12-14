@@ -4,9 +4,13 @@ require "thor"
 
 module DiscoLlama
   class CLI < Thor
-    desc "hello NAME", "say hello to NAME"
-    def hello(name)
-      puts "Hello #{name}"
+    desc "start CONFIG", "runs the bot with a given config file"
+    def start(config_path)
+      load config_path
+      bot = Discord::Bot.new
+      puts "Starting bot..."
+      puts "Invite URL: #{bot.discord.invite_url}"
+      bot.run
     end
   end
 end

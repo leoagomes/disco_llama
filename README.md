@@ -1,10 +1,12 @@
-# DiscoLlama
+# disco-llama
 
 A LLM-based Discord bot, written in Ruby.
 
 ## Installation
 
-TODO:
+### Running Locally
+
+Make sure to install [`ollama`](https://ollama.ai) installed.
 
 ## Development
 
