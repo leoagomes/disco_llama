@@ -19,6 +19,7 @@ You'll need:
 - Ruby `>= 3.2.2`
 - [Ollama](https://ollama.ai) `>= 1.15`
 - [A discord bot token.](https://discord.com/developers/docs/getting-started)
+  - we ❤️ AI, so why not generate a nice bot profile pic with [midjourney](https://midjourney.com)?
 
 Run `bin/setup` to install Ruby dependencies. Install this gem onto your local
 machine with `bundle exec rake install`.
