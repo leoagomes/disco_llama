@@ -59,6 +59,12 @@ Then try `/chat`ting with your bot.
     - not sure how this would work, but would probably be cool
 - [ ] memory -- make the bot be able to remember stuff across conversations
 
+- [ ] improve docker support
+  - currently you can build a docker image for this, but not do much more with it
+  - it'd be nice to have the `docker-compose.yml` file actually work
+  - not exactly a priority now because it's simpler to run the lib + ollama locally
+    on a Mac
+
 possibly very far future?
 
 - [ ] moderation -- add moderation actions to the bot
@@ -67,6 +73,13 @@ possibly very far future?
 
 `rake spec` runs the tests (not any rn, sorry).
 `bin/console` runs an interactive prompt with the library loaded.
+
+I usually run `./exe/disco-llama` directly to test stuff while changing it. It'd
+be nice to add some hot-reloading in the future for dev environments.
+
+You might also want to consider having your own `.env` files with configurations
+instead of adding your discord token and other stuff to the config file. Check
+`example.env` for what variables you might want to have there.
 
 To release a new version:
 
