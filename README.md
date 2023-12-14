@@ -10,7 +10,7 @@ You'll need:
 
 - Ruby `>= 3.2.2`
 - [Ollama](https://ollama.ai) `>= 1.15`
-- A discord bot token.
+- [A discord bot token.](https://discord.com/developers/docs/getting-started)
 
 Run `bin/setup` to install Ruby dependencies. Install this gem onto your local
 machine with `bundle exec rake install`.
@@ -41,10 +41,17 @@ Then try `/chat`ting with your bot.
 
 ![Sky is Blue](docs/images/sky-is-blue.png)
 
-## High-Level Roadmap
+## Roadmap
 
-- [ ] support conversations via replies
-- [ ]
+- [ ] simple conversational bot
+  - [ ] be able to reply to the bot
+  - [ ] multiple users can reply to the bot
+    - not sure how this would work, but would probably be cool
+- [ ] memory -- make the bot be able to remember stuff across conversations
+
+possibly very far future?
+
+- [ ] moderation -- add moderation actions to the bot
 
 ## Development
 
