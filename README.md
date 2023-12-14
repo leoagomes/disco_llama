@@ -10,6 +10,13 @@ This is very work in progress at the moment and very much an experimental projec
 Aside from the basic stuff, I'm currently adding what I think would be interesting
 to this without much regard to applicability.
 
+Please only use/complain about this if you actually understand it. It's an LLM
+not a magic machine. It generates text with some level of knowledge, it's not
+"intelligent". You can probably convince it fish can and have always flown. If
+you ask it what it is, it will tell you basically anything. Please make sure
+you understand the basics of how LLMs work before putting your life on the line
+for this.
+
 ## Getting Started
 
 ### Installing
