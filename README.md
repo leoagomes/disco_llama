@@ -2,21 +2,63 @@
 
 A LLM-based Discord bot, written in Ruby.
 
-## Installation
+## Getting Started
 
-### Running Locally
+### Installing
 
-Make sure to install [`ollama`](https://ollama.ai) installed.
+You'll need:
+
+- Ruby `>= 3.2.2`
+- [Ollama](https://ollama.ai) `>= 1.15`
+- A discord bot token.
+
+Run `bin/setup` to install Ruby dependencies. Install this gem onto your local
+machine with `bundle exec rake install`.
+
+### Usage
+
+Write a configuration file in Ruby like the following (check `example_config.rb`
+for more examples):
+
+```ruby
+DiscoLlama.configure do |config|
+  config.discord.token = "YOUR DISCORD TOKEN"
+  # change your Ollama instance URI with the following
+  # config.ollama.base_uri = "http://localhost:11434/api"
+
+  config.on :bot_start do |bot|
+    # register default commands on startup
+    bot.register_commands!
+  end
+end
+```
+
+Then run the bot with `disco-llama start <path-to-your-config>`.
+The discord bot invite URL will be printed out by the `start` command, you can
+use it to add the bot to your server.
+
+Then try `/chat`ting with your bot.
+
+![Sky is Blue](docs/images/sky-is-blue.png)
+
+## High-Level Roadmap
+
+- [ ] support conversations via replies
+- [ ]
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+`rake spec` runs the tests (not any rn, sorry).
+`bin/console` runs an interactive prompt with the library loaded.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To release a new version:
+
+1. Update the version number in `version.rb`
+2. run `bundle exec rake release`
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/leoagomes/disco_llama.
+Bug reports and pull requests are welcome [on GitHub](https://github.com/leoagomes/disco_llama).
 
 ## License
 

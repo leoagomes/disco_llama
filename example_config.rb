@@ -8,9 +8,9 @@ DiscoLlama.configure do |config|
   config.on :bot_start do |bot|
     bot.register_commands!
 
-    bot.discord.message do |event|
-      binding.irb
-    end
+    # bot.discord.message do |event|
+    #   binding.irb
+    # end
 
     nil
   end
