@@ -2,6 +2,14 @@
 
 A LLM-based Discord bot, written in Ruby.
 
+You can run it locally in your own machine to connect to your discord server.
+Your models on your hardware, no OpenAI required, no gimped AI forced down your
+throat.
+
+This is very work in progress at the moment and very much an experimental project.
+Aside from the basic stuff, I'm currently adding what I think would be interesting
+to this without much regard to applicability.
+
 ## Getting Started
 
 ### Installing
@@ -44,6 +52,7 @@ Then try `/chat`ting with your bot.
 ## Roadmap
 
 - [ ] simple conversational bot
+  - [ ] be able to re-generate replies
   - [ ] be able to reply to the bot
   - [ ] multiple users can reply to the bot
     - not sure how this would work, but would probably be cool
